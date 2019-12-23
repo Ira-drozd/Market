@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.card {
+    display: flex;
+    margin: 0 auto;
+    background: aquamarine;
+    flex-direction: column;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-item {
+    background: brown;
+    display: flex;
+}
+
+.img-section {
+    flex: 30%;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-about {
+    flex: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tags {
+    flex: 40%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background: darkgreen;
+    align-items: center;
+    width: 100%;
+}
+
+.tags input {
+    margin: 10px 10px;
+}
+
+.awards {
+    flex: 60%;
+    width: 100%;
+    display: flex;
+    background: blue;
+
+}
+
+.sub-awards {
+    display: none;
+}
+
+.award-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.award-item a {
+    margin: 10px 10px;
+}
+
+.award-item img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.card-description {
+    background: blueviolet;
+    display: flex;
+}
+
+.description {
+    flex: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-description {
+    background: coral;
+}
+
+.card-order {
+    display: flex;
+}
+
+.map-description {
+    background: darkmagenta;
+    flex: 70%;
+}
+
+.map-description iframe {
+    min-height: 300px;
+    padding: 10px;
+}
+
+.card-form {
+    background: #ff378e;
+    flex: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-form form {
+    background: darkgray;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form-row {
+    min-width: 250px;
+}
+
+.form-row label {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.card-button {
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-button .buttons {
+    width: 200px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    background: orange;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.buttons > button {
+    width: 100%;
+    height: 30px;
+    margin: 0 10px;
+
+}
+
+.button-yes-no button {
+    width: 100%;
+    height: 30px;
+}
+
+.button-yes-no {
+    display: flex;
+    width: 100%;
+}
+
+@media (max-width: 790px) {
+
+    .awards {
+        display: none;
+    }
+
+    .sub-awards {
+        flex: 100%;
+        display: flex;
+        background: blue;
+
+    }
+
+    .card-description {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .card-button {
+        flex: 100%;
+        flex-direction: row;
+    }
+
+    .card-order {
+        flex-direction: column;
+    }
+
+    .card-form form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: 50px;
+        width: 100%;
+    }
+
+    .form-row {
+        min-width: 50px;
+        display: flex;
+    }
+
+    .form-row label {
+        margin: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .sub-awards {
+        display: none;
+    }
+
+    .card-item {
+        flex-direction: column;
+    }
+
+    .card-button .buttons:last-child {
+        display: none;
+    }
+
+    .map-description {
+        display: none;
+    }
+
+    .card-form form {
+        flex-direction: column;
+    }
+
+    .form-row {
+        justify-content: center;
+    }
+}
